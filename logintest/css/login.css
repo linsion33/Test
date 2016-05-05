@@ -1,0 +1,162 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.login-heading {
+    width: 100%;
+    height: 200px;
+}
+
+.login-heading h1 {
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    font-size: 30px;
+    color: #999999;
+}
+
+.login-body {
+    width: 100%;
+    height: 500px;
+    background: -moz-linear-gradient(top, #336699 0%, #66CCCC 100%);
+}
+
+.login-footing {
+    width: 100%;
+    height: 220px;
+}
+
+.login-input form {
+    padding-top: 100px;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.inp {
+    width: 450px;
+    height: 50px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding-left: 20px;
+    border-radius: 5px;
+    -moz-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+.inp:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.inp:focus {
+    background-color: white;
+    width: 500px;
+    color: #66CCCC;
+}
+
+.i-checks {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.chk_1 {
+    display: none;
+}
+
+.i-checks .chk_1 + label {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #C1CACA;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 12px;
+    border-radius: 1px;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    float: left;
+}
+
+.chk_1 + label:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chk_1:checked + label {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #92A1AC;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+    color: #243441;
+}
+
+.chk_1:checked + label:after {
+    content: '\2714';
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    color: #758794;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 1px 0 0 0;
+    vertical-align: text-top;
+}
+
+.i-checks h3 {
+    float: left;
+    color: white;
+    margin-top: 1px;
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+}
+
+.login-btn {
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+.login {
+    width: 60%;
+    height: 70px;
+    background-color: white;
+    border-radius: 5px;
+    color: #66CCCC;
+    font-size: 30px;
+    font-family: "Microsoft YaHei";
+    border: 0;
+    font-weight: bold;
+    -moz-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    float: left;
+}
+
+.login:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.registe {
+    margin-left: 25px;
+    font-size: 25px;
+    font-family: "Microsoft YaHei";
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    float: left;
+    margin-top: 18px;
+}
+
+.registe:hover {
+    text-decoration: underline;
+    color: #758794;
+}
+
+.registe-img {
+    background: url(../imgs/registe.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    float: right;
+}

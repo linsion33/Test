@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 59px;
+    background-color: #DEE0E0;
+}
+
+.head-log {
+    float: left;
+    height: 60px;
+    width: 70px;
+    background-color: #39AAF2;
+    color: #eaf6f9;
+}
+
+.head-log-click {
+    float: left;
+    background: url("../imgs/registe.png") no-repeat center center;
+    height: 60px;
+    width: 76px;
+    /*background-color: darksalmon;*/
+}
+
+.wrapp {
+    position: absolute;
+    top: 60px;
+    height: 100%;
+    width: 100%;
+}
+
+.left-box {
+    background-color: #000000;
+    width: 70px;
+    height: 100%;
+    float: left;
+}
+
+.navigation-bar {
+    margin-left: 110px;
+    float: left;
+    width: 968px;
+    /*height: 60px;*/
+}
+
+.navigation-line li {
+    display: block;
+    float: left;
+    background-color: darksalmon;
+    padding: 0px 0px 0px 0px;
+}
+
+.navigation-line > li > a {
+    /*font-size: 16px;*/
+    color: #000;
+    /*padding: 20px 20px 20px 20px;*/
+    border-left: 1px solid #DEE0E0;
+    border-right: 1px solid #DEE0E0;
+}

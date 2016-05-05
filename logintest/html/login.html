@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html ng-app="ats">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link href="../css/login.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/jQuery/jquery-2.2.3.js"></script>
+    <script src="../js/bootstrap/bootstrap.js"></script>
+</head>
+<script>
+    //popover不会自己初始化，所以在页面中需要用js进行初始化
+    //    $(function () {
+    //        $('[data-toggle="popover"]').popover()
+    //    })
+
+    $(function () {
+        // 初始化 popover，触发方式为手动触发
+        $('.inp').popover({
+            trigger: 'manual'
+        })
+//                .on('focus', function () {
+//                    // 获得焦点时隐藏
+//                    $(this).popover('hide');
+//                })
+//                .on('blur', function () {
+//                    // 失去焦点时显示
+//                    $(this).popover('show');
+//                });
+    });
+
+    $(document).ready(function () {
+        $(".inp").blur(function () {
+            var result1 = $(this).val();
+            if (result1 == null || result1 == "")
+                $(this).popover('show');
+        });
+        $(".inp").focus(function () {
+            $(this).popover('hide');
+        });
+        $(".login").click(function () {
+            $('.inp').each(function(){
+                var result1 = $(this).val();
+                if (result1 == null || result1 == "")
+                    $(this).popover('show');
+                else
+                    $(this).popover('hide');
+            })
+
+        })
+
+//        $(".login").bind({
+//            click:function(){
+//              alert("click");
+//            },
+//            mouseenter:function(){
+//                alert("mouseenter");
+//            }
+//        });
+    });
+</script>
+
+<body>
+<div class="login-heading">
+    <h1>魅族测试平台 V7.0</h1>
+</div>
+<div class="login-body">
+    <div class="login-input">
+        <form name="LoginForm">
+            <input class="inp" type="text" placeholder="请输入邮箱前缀" data-toggle="popover" data-content="邮箱不能为空！"
+                   data-placement="top" data-trigger="focus"/>
+            <input class="inp" type="password" placeholder="请输入密码" data-toggle="popover" data-content="密码不能为空！"
+                   data-placement="top" onblur="check(this)" data-trigger="focus"/>
+
+            <div class="i-checks">
+                <input type="checkbox" id="real-check" class="chk_1"/>
+                <label for="real-check"></label>
+
+                <h3>记住密码</h3>
+            </div>
+
+            <div class="login-btn">
+                <button class="login" type="button">登录</button>
+                <a href="http://test.meizu.com/registe.html" class="registe">申请账户<span class="registe-img"></span></a>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="login-footing">
+</div>
+</body>
+</html>
